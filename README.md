@@ -1,6 +1,6 @@
-# Email App
+# Courier
 
-A native SwiftUI email client prototype for iPhone and iPad.
+Courier is a native SwiftUI email client prototype for iPhone and iPad. The installed iOS app display name is `email`.
 
 ## Features
 
