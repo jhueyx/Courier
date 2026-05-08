@@ -1,26 +1,26 @@
 # Email App
 
-A React/Vite email client prototype built from the components in `../Email App Files`.
+A native SwiftUI email client prototype for iPhone and iPad.
 
 ## Features
 
-- iOS-style mailboxes, inbox, search, folder drawer, message detail, and compose screens
+- Mailboxes, inbox, search, detail, and compose screens
 - Split inbox tabs for Important and Other mail
-- Swipe actions for archive and done
-- Compose sheet with send-later options
-- Theme, density, split inbox, and device-frame tweaks
+- Native SwiftUI swipe actions for archive and done
+- Suggested replies, snooze, archive, and pin actions on message detail
+- Compose flow with send-later options
+- Seeded local data based on the original prototype
 
 ## Run
 
-```bash
-npm install
-npm run dev
-```
+Open `EmailApp.xcodeproj` in Xcode and run the `EmailApp` scheme on an iOS simulator.
 
-Then open `http://127.0.0.1:5173/`.
-
-## Build
+## Build From Terminal
 
 ```bash
-npm run build
+xcodebuild \
+  -project EmailApp.xcodeproj \
+  -scheme EmailApp \
+  -destination 'generic/platform=iOS Simulator' \
+  build
 ```
